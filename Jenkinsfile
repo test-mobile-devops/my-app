@@ -5,7 +5,7 @@ pipeline {
     environment {
         APP_NAME = 'demo-mobile-app'
         BUILD_NUMBER = "${env.BUILD_NUMBER}"
-        DEPLOY_PATH = '/var/www/html/my-app'  // Change this to your web server path
+        DEPLOY_PATH = '/var/jenkins_home/deployed-app'  // Change this to your web server path
     }
     
     stages {
